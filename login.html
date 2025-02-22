@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Connect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container login-page">
+        <header class="vintage-header">
+            <h1><i class="fas fa-cogs"></i> Engineering Connect</h1>
+            <p class="tagline">Bridging Innovation & Expertise Since 2023</p>
+        </header>
+
+        <main class="login-main">
+            <div class="login-card">
+                <div class="card-header">
+                    <h2>Member Login</h2>
+                    <div class="decorative-line"></div>
+                </div>
+                <form id="loginForm" class="vintage-form">
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                        <input type="email" id="email" required class="vintage-input" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                        <input type="password" id="password" required class="vintage-input" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="vintage-btn">Login <i class="fas fa-arrow-right"></i></button>
+                    <p class="register-link">New here? <a href="#register">Create an account</a></p>
+                </form>
+            </div>
+        </main>
+
+        <footer class="vintage-footer">
+            <p>&copy; 2025 Engineering Connect. Crafted with <i class="fas fa-heart"></i> for innovation</p>
+            <div class="footer-links">
+                <a href="#terms">Terms</a> 
+                <a href="#privacy">Privacy</a> 
+                <a href="#contact">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Ensure the DOM is fully loaded before attaching the event listener
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Simple validation (replace with actual authentication logic)
+                if (email === "user@example.com" && password === "password") {
+                    // Redirect to home.html after successful login
+                    window.location.href = "home.html";
+                } else {
+                    alert("Invalid email or password. Please try again.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
