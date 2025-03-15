@@ -16,13 +16,13 @@
 
         body {
             background: #f0f4f8;
-            color: #2c3e50;
+            color: #4e5358;
             line-height: 1.6;
         }
 
         /* Header Styles */
         header {
-            background: #2c3e50;
+            background: #10467c;
             padding: 1rem 2rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             display: flex;
@@ -39,7 +39,7 @@
         }
 
         header h1 i {
-            color: #3498db;
+            color: #0d96f0;
             font-size: 2.5rem;
         }
 
@@ -65,13 +65,13 @@
             padding: 4rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
-            text-align: center;
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            color: #2c3e50;
+            color: #111514;
+            text-align: center;
         }
 
         .notice-container {
@@ -79,28 +79,36 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
         }
 
-        .notice-container i {
-            font-size: 3rem;
-            color: #3498db;
-            margin-bottom: 1rem;
-            display: block;
-            text-align: center;
+        .notice-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+            border-radius: 5px;
         }
 
-        .notice-container p {
-            font-size: 1.1rem;
+        .notice-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .notice-item p {
+            font-size: 1rem;
             color: #666;
-            text-align: center;
+        }
+
+        .notice-item .date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 0.5rem;
         }
 
         /* Footer Styles */
         footer {
-            background: #2c3e50;
+            background: #075db4;
             color: #fff;
             padding: 2rem;
             text-align: center;
@@ -109,6 +117,23 @@
 
         footer p {
             margin: 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0d476a;
         }
 
         @media (max-width: 768px) {
@@ -134,10 +159,7 @@
         <h1><i class="fas fa-cogs"></i>Engineering Connect</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="notice.html">Notices</a></li>
-                <li><a href="index.html">Logout</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -145,17 +167,84 @@
     <main>
         <h1>Latest Notices</h1>
         <div class="notice-container">
-            <i class="fas fa-bullhorn"></i>
-            <p>No new notices at the moment. Check back later!</p>
+            <!-- Notice 1 -->
+            <div class="notice-item">
+                <h3>Civil Engineering Workshop</h3>
+                <p>A workshop on modern construction techniques will be held on November 15, 2023. Register now!</p>
+                <div class="date">Posted on: October 25, 2023</div>
+            </div>
+
+            <!-- Notice 2 -->
+            <div class="notice-item">
+                <h3>Electrical Engineering Seminar</h3>
+                <p>Join us for a seminar on renewable energy systems on November 20, 2023. Don't miss out!</p>
+                <div class="date">Posted on: October 26, 2023</div>
+            </div>
+
+            <!-- Notice 3 -->
+            <div class="notice-item">
+                <h3>Mechanical Engineering Webinar</h3>
+                <p>Learn about advancements in robotics and automation in our upcoming webinar on November 25, 2023.</p>
+                <div class="date">Posted on: October 27, 2023</div>
+            </div>
+
+            <!-- Notice 4 -->
+            <div class="notice-item">
+                <h3>Software Engineering Hackathon</h3>
+                <p>Participate in the annual coding hackathon on December 1, 2023. Prizes worth $10,000!</p>
+                <div class="date">Posted on: October 28, 2023</div>
+            </div>
+
+            <!-- Notice 5 -->
+            <div class="notice-item">
+                <h3>Robotics Engineering Competition</h3>
+                <p>Showcase your robotics skills in the national competition on December 10, 2023. Register today!</p>
+                <div class="date">Posted on: October 29, 2023</div>
+            </div>
+
+            <!-- Notice 6 -->
+            <div class="notice-item">
+                <h3>Chemical Engineering Conference</h3>
+                <p>Attend the international conference on chemical engineering innovations on December 15, 2023.</p>
+                <div class="date">Posted on: October 30, 2023</div>
+            </div>
+
+            <!-- Notice 7 -->
+            <div class="notice-item">
+                <h3>Aerospace Engineering Workshop</h3>
+                <p>Learn about the latest trends in aerospace technology on December 20, 2023. Limited seats available!</p>
+                <div class="date">Posted on: October 31, 2023</div>
+            </div>
+
+            <!-- Notice 8 -->
+            <div class="notice-item">
+                <h3>Biomedical Engineering Seminar</h3>
+                <p>Explore the future of medical devices in our seminar on January 5, 2024. Register now!</p>
+                <div class="date">Posted on: November 1, 2023</div>
+            </div>
+
+            <!-- Notice 9 -->
+            <div class="notice-item">
+                <h3>Environmental Engineering Webinar</h3>
+                <p>Join the webinar on sustainable environmental practices on January 10, 2024.</p>
+                <div class="date">Posted on: November 2, 2023</div>
+            </div>
+
+            <!-- Notice 10 -->
+            <div class="notice-item">
+                <h3>Industrial Engineering Workshop</h3>
+                <p>Learn about lean manufacturing techniques in our workshop on January 15, 2024.</p>
+                <div class="date">Posted on: November 3, 2023</div>
+            </div>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Engineering Connect. All Rights Reserved.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-facebook"></i></a>
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-twitter"></i></a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 </body>

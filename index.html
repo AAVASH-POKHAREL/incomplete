@@ -3,210 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Engineering Connect</title>
+    <title>Engineering Connect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
         body {
-            background: #f0f4f8;
-            color: #2c3e50;
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #02192f;
         }
-
-        /* Header Styles */
         header {
-            background: #2c3e50;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1rem 2rem;
+            background: #043566;
+            color: white;
         }
-
         header h1 {
-            color: #fff;
-            font-size: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
         }
-
-        header h1 i {
-            color: #3498db;
-            font-size: 2.5rem;
-        }
-
         nav ul {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
             list-style: none;
         }
-
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
         }
-
-        nav a:hover {
-            color: #3498db;
-        }
-
-        /* Main Content */
         .hero {
-            background: linear-gradient(rgba(44,62,80,0.9), rgba(44,62,80,0.9)),
-                        url('https://images.unsplash.com/photo-1581091226033-d6c7cd0fd6b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 2rem;
+            background: linear-gradient(rgba(32, 62, 126, 0.9), rgba(15, 0, 102, 0.9)), url('https://via.placeholder.com/1200x600');
             background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 6rem 2rem;
-            text-align: center;
+            color: white;
         }
-
+        .hero-content {
+            max-width: 600px;
+        }
         .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
         }
-
-        /* Services Section */
+        .cta-button {
+            background: #ff6600;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
         .services {
             padding: 4rem 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .service-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            background: white;
         }
-
-        .service-card:hover {
-            transform: translateY(-5px);
+        .services h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
         }
-
+        .service-card {
+            display: inline-block;
+            width: 250px;
+            background: #033567;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem;
+        }
         .service-card i {
-            font-size: 3rem;
-            color: #3498db;
+            font-size: 2rem;
             margin-bottom: 1rem;
         }
-
-        /* Footer Styles */
         footer {
-            background: #2c3e50;
-            color: #fff;
-            padding: 2rem;
             text-align: center;
-            margin-top: 4rem;
-        }
-
-        .cta-button {
-            background: #3498db;
-            color: #fff;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background: #2980b9;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
-            }
+            padding: 2rem;
+            background: #003366;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-cogs"></i>Engineering Connect</h1>
+        <h1>Engineering Connect</h1>
         <nav>
             <ul>
-                <li><a href="#"><i class="fas fa-user"></i> Er.Aavash</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="notice.html">Notices</a></li>
-                <li><a href="index.html">Logout</a></li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="notice.html">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Notices</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="consult.html">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>Consult</span>
+                    </a>
+                </li>
             </ul>
         </nav>
+        
+        <style>
+            /* Navigation Bar Styles */
+            nav {
+                background: #043669; /* Dark blue background */
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+        
+            nav ul {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        
+            nav li {
+                position: relative;
+            }
+        
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+        
+            nav a:hover {
+                background: #030e15; /* Teal background on hover */
+                color: #fff;
+            }
+        
+            nav a i {
+                font-size: 1.2rem;
+            }
+        
+            nav a span {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        
+            /* Add a subtle underline effect on hover */
+            nav a::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 100%;
+                height: 2px;
+                background: #e67e22; /* Orange underline */
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+        
+            nav a:hover::after {
+                transform: scaleX(1);
+            }
+        
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                }
+        
+                nav a {
+                    padding: 0.5rem;
+                }
+            }
+        </style>
     </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Connect with the Best Engineers</h2>
+            <p>Find experts in civil, mechanical, and electrical engineering for your needs.</p>
+        </div>
+    </section>
+    <section class="services">
+        <h3>Our Services</h3>
+        <div class="service-card">
+            <i class="fas fa-hard-hat"></i>
+            <h4><a href="civil.html" target="_blank" style="color: #ebdba3;">Civil Engineering</a></h4>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-microchip"></i>
+            <h4><a href="mechanical.html" target="_blank" style="color: #ebdba3;">Mechanical Engineering</a></h4>
 
-    <main>
-        <section class="hero">
-            <h2>Engineering Solutions at Your Fingertips</h2>
-            <p>Connect with certified experts across multiple engineering disciplines</p>
-            <a href="consult.html" class="cta-button">Consult Now <i class="fas fa-arrow-right"></i></a>
-        </section>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-robot"></i>
+            <h4><a href="electrical.html" target="_blank" style="color: #ebdba3;">Electrical Engineering</a></h4>
 
-        <section class="services">
-            <div class="service-card">
-                <i class="fas fa-hard-hat"></i>
-                <h3>Civil Engineering</h3>
-                <p>Connect with infrastructure and construction experts</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-microchip"></i>
-                <h3>Electrical Engineering</h3>
-                <p>Get solutions for electrical systems and electronics</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-robot"></i>
-                <h3>Mechanical Engineering</h3>
-                <p>Consult with machinery and automation specialists</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Software Engineering</h3>
-                <p>Find solutions for your software development needs</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-robot"></i>
+            <h4 > <a href="robotics.html" target="_blank" style="color: #ebdba3;">Robotics Engineering</a></h4>
 
-            </div>
-            <div class="service-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Robotics Engineering</h3>
-                <p>Contact me for any assistance for the enhancement</p>
-                
-            </div>
-        </section>
-    </main>
-
+        </div>
+    </section>
     <footer>
         <p>&copy; 2025 Engineering Connect. All Rights Reserved.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-facebook"></i></a>
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-twitter"></i></a>
-        </div>
     </footer>
 </body>
 </html>

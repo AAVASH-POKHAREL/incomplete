@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Engineering Connect</title>
+    <title>Civil Engineering - Engineering Connect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Base Styles */
@@ -16,13 +16,17 @@
 
         body {
             background: #f0f4f8;
-            color: #5ab114;
+            color: #2c3e50;
             line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
         }
 
         /* Header Styles */
         header {
-            background: #7c240c;
+            background: #2c3e50;
             padding: 1rem 2rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             display: flex;
@@ -39,7 +43,7 @@
         }
 
         header h1 i {
-            color: #0099ff;
+            color: #e67e22;
             font-size: 2.5rem;
         }
 
@@ -57,7 +61,7 @@
         }
 
         nav a:hover {
-            color: #1d5a83;
+            color: #e67e22;
         }
 
         /* Main Content */
@@ -65,54 +69,66 @@
             padding: 4rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(44,62,80,0.8), rgba(44,62,80,0.8)), url('civil-engineering.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 6rem 2rem;
             text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
+            border-radius: 10px;
             margin-bottom: 2rem;
-            color: #000000;
         }
 
-        .contact-info {
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .activities {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
-        .contact-card {
+        .activity-card {
             background: #fff;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(155, 14, 14, 0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
 
-        .contact-card:hover {
+        .activity-card:hover {
             transform: translateY(-5px);
         }
 
-        .contact-card i {
+        .activity-card i {
             font-size: 3rem;
-            color: #2272a8;
+            color: #e67e22;
             margin-bottom: 1rem;
         }
 
-        .contact-card h3 {
+        .activity-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #000000;
         }
 
-        .contact-card p {
-            font-size: 1.1rem;
+        .activity-card p {
+            font-size: 1rem;
             color: #666;
         }
 
         /* Footer Styles */
         footer {
-            background: #094e93;
+            background: #2c3e50;
             color: #fff;
             padding: 2rem;
             text-align: center;
@@ -135,50 +151,55 @@
                 gap: 1rem;
             }
 
-            .contact-info {
-                grid-template-columns: 1fr;
+            .hero {
+                padding: 4rem 1rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-cogs"></i>Engineering Connect</h1>
+        <h1><i class="fas fa-hard-hat"></i>Civil Engineering</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Contact Us</h1>
-        <div class="contact-info">
-            <div class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p>support@engineeringconnect.com</p>
+        <section class="hero">
+            <h2>Building the Future</h2>
+            <p>Explore innovative solutions in civil engineering for infrastructure and construction.</p>
+        </section>
+
+        <section class="activities">
+            <div class="activity-card">
+                <i class="fas fa-building"></i>
+                <h3>Structural Design</h3>
+                <p>Learn about advanced structural analysis and design techniques.</p>
             </div>
-            <div class="contact-card">
-                <i class="fas fa-phone"></i>
-                <h3>Phone</h3>
-                <p>9863561390</p>
+            <div class="activity-card">
+                <i class="fas fa-road"></i>
+                <h3>Transportation Engineering</h3>
+                <p>Discover modern solutions for road and transportation systems.</p>
             </div>
-            <div class="contact-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Address</h3>
-                <p>Gaighat, Udayapur, Koshi State, Nepal</p>
+            <div class="activity-card">
+                <i class="fas fa-tint"></i>
+                <h3>Water Resources</h3>
+                <p>Explore sustainable water management practices.</p>
             </div>
-        </div>
+            <div class="activity-card">
+                <i class="fas fa-tree"></i>
+                <h3>Environmental Engineering</h3>
+                <p>Study the impact of construction on the environment.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Engineering Connect. All Rights Reserved.</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-facebook"></i></a>
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: #fff; margin: 0 1rem;"><i class="fab fa-twitter"></i></a>
-        </div>
+        <p>&copy; 2023 Engineering Connect. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
